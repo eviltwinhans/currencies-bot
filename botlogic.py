@@ -34,7 +34,7 @@ def send_currencies(message: telebot.types.Message):
 @bot.message_handler(content_types=['photo'])
 def handle_photos(message: telebot.types.Message):
     bot.reply_to(message, "OK, sure...")
-    bot.send_message(message.chat.id, "That's a nice picture, dude =)")
+    bot.send_message(message.chat.id, "That's still a nice picture, dude =)")
 
 
 @bot.message_handler(content_types=['text'])
@@ -60,10 +60,7 @@ def convert(message: telebot.types.Message):
 
 bot.polling()
 
-# @bot.message_handler(filters)
-# def function_name(message):
-#     bot.reply_to(message, "This is a message handler")
-#
+
 # cache = redis.Redis(host='redis-18178.c293.eu-central-1-1.ec2.cloud.redislabs.com',
 #                     port=18178,
 #                     password='iDiViai47YgqK7xTDi0pOiWCrfNN3XcH', )
